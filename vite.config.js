@@ -1,7 +1,10 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
+  base: './', // Ensures relative URLs for resources
   plugins: [react()],
-  base: '/', // Changed from '/sa3oud.github.io/'
-})
+  build: {
+    outDir: 'dist' // Specifies the output directory for built files
+  }
+});
