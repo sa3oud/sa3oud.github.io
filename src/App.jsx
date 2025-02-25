@@ -128,7 +128,7 @@ const Portfolio = () => {
                 </button>
               </div>
             </div>
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 p-3"> {/* Added p-3 class for padding */}
               <img
                 src={profilePic}
                 alt="Profile"
